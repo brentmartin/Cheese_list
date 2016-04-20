@@ -1,0 +1,10 @@
+<h1>These are the Cheeses</h1>
+
+<% @cheeses.each do |cheese| %>
+<div class='cheese'>
+  <h2 class='cheese_name'>
+    <%= cheese.name %>
+  </h2>
+</div>
+<hr style='border: none;' />
+<% end %>

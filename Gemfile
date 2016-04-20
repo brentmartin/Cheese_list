@@ -44,12 +44,17 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem "refills"
 end
 
+gem 'bourbon'
+gem 'neat'
 
 gem 'faker'
 gem 'kaminari'
 gem 'bcrypt'
+
 group :production do
   gem 'puma'
   gem 'rails_12factor'

@@ -1,0 +1,15 @@
+<%= link_to 'Back', cheeses_path %>
+
+
+<h1>Cheese type: <strong><%= @cheese.name %></strong></h1>
+
+<h2>Here are the users that like:
+  <% @users.each do |user| %>
+      <%= user.username %>
+      <%= link_to 'Show', user %>
+  <% end %>
+</h2>
+
+<h2> You belong to >
+
+</h2>

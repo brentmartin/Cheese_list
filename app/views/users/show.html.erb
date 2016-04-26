@@ -1,0 +1,11 @@
+<%= link_to 'Back', users_path %>
+
+
+<h1>Hello <strong><%= @user.username %></strong></h1>
+
+<h2>You're favorite cheeses are:
+  <% @cheeses.each do |cheese| %>
+      <%= cheese.name %>
+      <%= link_to 'Show', cheese %>
+  <% end %>
+</h2>
